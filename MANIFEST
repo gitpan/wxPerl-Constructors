@@ -1,0 +1,14 @@
+Build.PL
+build/xs_proto_map
+Changes
+examples/wxconstruct.pl
+lib/wxPerl/Constructors.pm
+lib/wxPerl/Constructors/argmap.pm
+lib/wxPerl/Constructors/argmap.pod
+lib/wxPerl/Constructors/doc.pod
+MANIFEST
+MANIFEST.SKIP
+META.yml			# Will be created by "make dist"
+notes/proto_notes.txt
+README
+t/00-load.t
