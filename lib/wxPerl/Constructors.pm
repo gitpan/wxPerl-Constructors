@@ -1,5 +1,5 @@
 package wxPerl::Constructors;
-$VERSION = eval{require version}?version::qv($_):$_ for(0.0.1);
+$VERSION = eval{require version}?version::qv($_):$_ for(0.0.2);
 
 use warnings;
 use strict;
@@ -143,9 +143,12 @@ use wxPerl::Constructors::argmap;
         }
       } # end hashref wrangling
       else { # standard usage
-        if(@_) {
+        if(@_) { # first collect the required positional arguments
           while(my $arg = shift(@argpos)) {
-            exists($defaults->{$arg}) and last;
+            if(exists($defaults->{$arg})) {
+              unshift(@argpos, $arg); # put it back
+              last;
+            }
             push(@args, shift(@_));
           }
         }

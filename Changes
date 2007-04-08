@@ -1,0 +1,11 @@
+Revision history for wxPerl-Constructors
+
+v0.0.2 2007-04-08
+
+  * fixed bug in handling optional arguments
+
+v0.0.1 2007-04-04
+
+  * First Public Release
+
+# vim:ts=2:sw=2:et:sta

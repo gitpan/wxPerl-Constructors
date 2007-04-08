@@ -12,3 +12,4 @@ META.yml			# Will be created by "make dist"
 notes/proto_notes.txt
 README
 t/00-load.t
+t/01-frame.t
