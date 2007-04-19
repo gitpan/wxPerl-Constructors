@@ -1,5 +1,9 @@
 Revision history for wxPerl-Constructors
 
+v0.0.3 2007-04-19
+
+  * added new classes (those matching /Class::new(parent, id/)
+
 v0.0.2 2007-04-08
 
   * fixed bug in handling optional arguments

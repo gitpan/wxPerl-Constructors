@@ -35,7 +35,7 @@ sub main {
 
     $v = [split(/ *, */, $v)];
     my $p = shift(@$v);
-    $p eq 'parent' or die; # ASSERT
+    $p eq 'parent' or die "trouble in @$v"; # ASSERT
     my $id = shift(@$v); # don't need that either
     $id =~ m/^id\b/ or die $id; # ASSERT
     #$v->[0] = 'id = -1';
@@ -135,6 +135,7 @@ sub acquire_protos {
 
   my %protos;
   foreach my $file (@files) {
+    warn "$file\n";
     my $current_package;
     open(my $fh, '<', $file) or die "oops $file";
     while(my $line = <$fh>) {
@@ -148,6 +149,13 @@ sub acquire_protos {
         $current_package or die "arg $file";
         $protos{$current_package} = $proto;
       }
+      elsif($current_package and
+        ($line =~ m/^wx${current_package}::new\( (parent, id,.*)\)$/)) {
+        my $proto = $1;
+        $proto =~ s/ +$//;
+        $protos{$current_package} = $proto;
+      }
+
     }
   }
   return(%protos);

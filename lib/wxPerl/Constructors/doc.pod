@@ -185,6 +185,20 @@ http://wxwidgets.org/manuals/stable/wx_wxlistctrl.html
 
 http://wxwidgets.org/manuals/stable/wx_wxlistview.html
 
+=head2 wxPerl::MiniFrame
+
+  wxPerl::MiniFrame->new(
+    $parent,
+    $title,
+    id       => -1,
+    position => Wx::wxDefaultPosition(),
+    size     => Wx::wxDefaultSize(),
+    style    => Wx::wxDEFAULT_FRAME_STYLE(),
+    name     => wxFrameNameStr,
+  );
+
+http://wxwidgets.org/manuals/stable/wx_wxminiframe.html
+
 =head2 wxPerl::Notebook
 
   wxPerl::Notebook->new(
@@ -330,6 +344,58 @@ http://wxwidgets.org/manuals/stable/wx_wxspinbutton.html
 
 http://wxwidgets.org/manuals/stable/wx_wxspinctrl.html
 
+=head2 wxPerl::StaticBox
+
+  wxPerl::StaticBox->new(
+    $parent,
+    $label,
+    id       => -1,
+    position => Wx::wxDefaultPosition(),
+    size     => Wx::wxDefaultSize(),
+    style    => 0,
+    name     => wxStaticBoxNameStr,
+  );
+
+http://wxwidgets.org/manuals/stable/wx_wxstaticbox.html
+
+=head2 wxPerl::StaticLine
+
+  wxPerl::StaticLine->new(
+    $parent,
+    id       => -1,
+    position => Wx::wxDefaultPosition(),
+    size     => Wx::wxDefaultSize(),
+    style    => Wx::wxLI_HORIZONTAL(),
+    name     => staticLine,
+  );
+
+http://wxwidgets.org/manuals/stable/wx_wxstaticline.html
+
+=head2 wxPerl::StaticText
+
+  wxPerl::StaticText->new(
+    $parent,
+    $label,
+    id       => -1,
+    position => Wx::wxDefaultPosition(),
+    size     => Wx::wxDefaultSize(),
+    style    => 0,
+    name     => wxStaticTextNameStr,
+  );
+
+http://wxwidgets.org/manuals/stable/wx_wxstatictext.html
+
+=head2 wxPerl::StatusBar
+
+  wxPerl::StatusBar->new(
+    $parent,
+    id    => -1,
+    style => 0,
+    name  => '',
+  );
+
+http://wxwidgets.org/manuals/stable/wx_wxstatusbar.html
+
 =head2 wxPerl::TextCtrl
 
   wxPerl::TextCtrl->new(
@@ -372,6 +438,19 @@ http://wxwidgets.org/manuals/stable/wx_wxtogglebutton.html
   );
 
 http://wxwidgets.org/manuals/stable/wx_wxtoolbar.html
+
+=head2 wxPerl::ToolBarSimple
+
+  wxPerl::ToolBarSimple->new(
+    $parent,
+    id       => -1,
+    position => Wx::wxDefaultPosition(),
+    size     => Wx::wxDefaultSize(),
+    style    => Wx::wxTB_HORIZONTAL() | Wx::wxNO_BORDER(),
+    name     => wxPanelNameStr,
+  );
+
+http://wxwidgets.org/manuals/stable/wx_wxtoolbarsimple.html
 
 =head2 wxPerl::TreeCtrl
 

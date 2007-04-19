@@ -1,5 +1,5 @@
 package wxPerl::Constructors;
-$VERSION = eval{require version}?version::qv($_):$_ for(0.0.2);
+$VERSION = eval{require version}?version::qv($_):$_ for(0.0.3);
 
 use warnings;
 use strict;
@@ -167,7 +167,7 @@ use wxPerl::Constructors::argmap;
         }
       } # end argument wrangling
       @_ = ($class, @args);
-      #warn "$super_method @_";
+      #warn "$super_method ", join(',', @_), "\n";
       goto &$super_method;
       # vs:
       #$class->$super_method(@args);
