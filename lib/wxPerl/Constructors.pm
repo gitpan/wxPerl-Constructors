@@ -1,5 +1,5 @@
 package wxPerl::Constructors;
-$VERSION = eval{require version}?version::qv($_):$_ for(0.0.3);
+$VERSION = eval{require version}?version::qv($_):$_ for(0.0.4);
 
 use warnings;
 use strict;
@@ -167,6 +167,10 @@ use wxPerl::Constructors::argmap;
         }
       } # end argument wrangling
       @_ = ($class, @args);
+      # TODO there's a problem with dangling args, so we'll need to do
+      # something like remove any trailing undef arguments
+      # (XXX the trailing undef comes from Wx.pm Frame->defaultname I
+      # think.)
       #warn "$super_method ", join(',', @_), "\n";
       goto &$super_method;
       # vs:

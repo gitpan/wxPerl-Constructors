@@ -1,5 +1,14 @@
 Revision history for wxPerl-Constructors
 
+v0.0.4 2007-04-22
+
+  * 'Build' ne 'build', but the toy computers of the world don't seem to
+    comprehend that whole "A is not a" thing, so I get to build a new
+    distribution and try to make an appropriate changelog entry without
+    using the select portion of the English language which more
+    correctly expresses my opinions of proprietary operating systems
+    designed by incompetent luddites.
+
 v0.0.3 2007-04-19
 
   * added new classes (those matching /Class::new(parent, id/)

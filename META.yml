@@ -1,6 +1,6 @@
 ---
 name: wxPerl-Constructors
-version: v0.0.3
+version: v0.0.4
 author:
   - 'Eric Wilhelm @ <ewilhelm at cpan dot org>'
 abstract: parameterized constructors
@@ -14,7 +14,7 @@ requires:
 provides:
   wxPerl::Constructors:
     file: lib/wxPerl/Constructors.pm
-    version: v0.0.3
+    version: v0.0.4
   wxPerl::Constructors::argmap:
     file: lib/wxPerl/Constructors/argmap.pm
 generated_by: Module::Build version 0.2807
